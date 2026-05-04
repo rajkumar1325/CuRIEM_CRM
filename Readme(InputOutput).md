@@ -4,61 +4,67 @@
 
 ---
 
-## 🌐 Landing Page
+## 🌐 Login — Frontend
 
 The public-facing site where users can sign up or log in as **Admin**, **Employee**, or **Customer**. Includes a live workspace creation form with a 14-day free trial.
 
-[![Landing Page](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-32-49.png)
-](https://github.com/rajkumar1325/CuRIEM_CRM/blob/77055fdef94b65d0b50067e3af79bd07fa02d242/Assets/login-frontend)
+![Login Frontend](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/login-frontend)
+
 ---
 
-## 🔐 Authentication — Users Database
+## 🔐 Login — Backend (Auth Users Database)
 
 All users are stored in the `auth_users` table with a BCrypt hashed password and a role: `ADMIN`, `EMPLOYEE`, or `CUSTOMER`. Login is secured with **JWT tokens**.
 
-![Auth Users DB](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-39-46.png)
+![Login Backend](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/login-backend)
 
 ---
 
-## 📋 Leads Dashboard
+## 📋 Leads — Frontend
 
 Track all incoming leads with filters by status — New, Contacted, Qualified, Converted, Lost. View summary stats and edit or delete any lead from the table.
 
-![Leads Dashboard](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-36-24.png)
+![Leads Frontend](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/login-frontend)
 
-### Leads — Database Table
+### Leads — Backend (Database Table)
 
 Stores lead info: name, email, company, status, source, agent, conversion date, deal status, and received amount.
 
-![Leads DB](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-37-02.png)
+![Leads Backend](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/leads-backend)
 
 ---
 
-## 👥 Customers Dashboard
+## 👥 Customer — Frontend
 
 Displays all customers in a card layout showing status (Active / Closed), contact info, product, and contract value. Each card has a **View** button for full details.
 
-![Customers Dashboard](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-37-42.png)
+![Customer Frontend](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/customer-frontend)
 
-### Customers — Database Table
+### Customer — Backend (Database Table)
 
 Stores customer records: company, email, phone, address, plan, contract value, purchase date, and status.
 
-![Customers DB](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-38-33.png)
+![Customer Backend](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/customer-backend)
 
 ---
 
-## ⚙️ Backend — Spring Boot
+## ⚙️ Backend — API, Controllers & DTOs
 
-Built with **Java Spring Boot** following a clean layered architecture — Controllers, Services, Repositories, DTOs, and Entities. Security via **JWT + Spring Security RBAC**.
+Built with **Java Spring Boot**. This layer handles all incoming API requests, routes them to the right service, and returns structured responses via DTOs.
 
-![Backend Controllers & DTOs](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-40-24.png)
+![DB API Controller DTO](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/DB-api,controller,dto)
 
-### Entities, Repositories & Security
+### Backend — Enums, Repositories & More
 
-All database entities (Lead, Customer, Employee, Orders, Feedback, etc.) mapped via JPA. Security layer includes JWT filter, custom user details, and role-based access control.
+All database entities (Lead, Customer, Employee, Orders, Feedback, etc.) mapped via JPA with their repositories and enums.
 
-![Backend Entities & Security](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-40-43.png)
+![DB Enum Repo](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/DB-enum,repo,etc)
+
+### Backend — Security & Services
+
+Security layer includes JWT filter, custom user details service, and role-based access control. Services contain all business logic.
+
+![DB Security Service](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/DB-security,service)
 
 ---
 
