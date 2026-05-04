@@ -8,8 +8,8 @@
 
 The public-facing site where users can sign up or log in as **Admin**, **Employee**, or **Customer**. Includes a live workspace creation form with a 14-day free trial.
 
-![Landing Page](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-32-49.png)
-
+[![Landing Page](https://raw.githubusercontent.com/rajkumar1325/CuRIEM_CRM/main/Assets/2026-05-04_23-32-49.png)
+](https://github.com/rajkumar1325/CuRIEM_CRM/blob/77055fdef94b65d0b50067e3af79bd07fa02d242/Assets/login-frontend)
 ---
 
 ## 🔐 Authentication — Users Database
